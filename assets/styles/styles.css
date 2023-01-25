@@ -1,0 +1,74 @@
+/* -- DESIGN 1 -- */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+}
+
+/* HEADER */
+
+header {
+    width: 100%;
+    height: 80vh;
+    position: relative;
+
+}
+
+.banner-container {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner {
+    top: 50%;
+    transform: translateY(-25%);
+}
+
+.main-title {
+    font-size: 10vh;
+    position: absolute;
+    z-index: 1;
+}
+
+.logo {
+    position: absolute;
+    z-index: 1;
+    top: 90%;
+    left: 80%;
+    background-color: white;
+    border: 2px solid black;
+}
+
+/* MAIN PANEL */
+.main-panel {
+    width: 100%;
+}
+
+/* NAV */
+
+nav {
+    display: inline-block;
+    width: 10%;
+}
+
+nav ul>li {
+    margin: 10px 0px;
+}
+
+/* MAIN */
+
+main {
+    display: inline-block;
+    width: 75%;
+}
+
+main>h2 {
+    display: block;
+}
