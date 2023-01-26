@@ -1,43 +1,17 @@
 /* -- DESIGN 1 -- */
-
 * {
-    box-sizing: border-box;
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
 /* HEADER */
 header {
     width: 100%;
-    height: 40vh;
-    position: relative;
 }
 
-.banner-container {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-.banner-container img {
-    top: 50%;
-    transform: translateY(-25%);
-
-}
-
-.main-title {
-    font-size: 110px;
-    position: absolute;
-    z-index: 1;
-}
-
-.logo {
-    position: absolute;
-    z-index: 1;
-    top: 92%;
-    left: 80%;
-    background-color: white;
-    border: 2px solid black;
+header>h1 {
+    font-size: 90px;
 }
 
 /* MAIN PANEL */
@@ -46,34 +20,28 @@ header {
 }
 
 #main-panel>h2 {
-    background-color: black;
-    color: white;
     text-align: center;
-    margin: 5px 0;
     padding: 10px 0;
+    border: 1px solid black;
     font-size: 40px;
 }
 
-/* NAV */
+/* LOGO CONTAINER */
 
-nav {
+.logo-container {
+    border: 1px solid black;
     display: inline-block;
-    vertical-align: middle;
-    width: 10%;
+    vertical-align: top;
+    width: 250px;
     height: 100%;
 }
 
-nav ul>li {
-    margin: 10px 0;
+.logo-container>img {
+    width: 150px;
 }
 
-/* #middle-li {
-    margin: 150px 0;
-} */
-
 /* MAIN */
-
 main {
     display: inline-block;
-    width: 75%;
+    width: 50%;
 }
