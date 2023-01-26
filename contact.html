@@ -15,37 +15,41 @@
   <body>
     <header>
       <h1>Mighty Ducks Hockey League</h1>
-      <img
-        src="./assets/images/Logo_Mighty_ducks-01.png"
-        alt="mighty ducks logo"
-        width="130"
-      />
+      <div id="banner-container"></div>
+      <nav>
+        <a href="./index.html">Home</a>
+        <a href="./about.html">About MDHL</a>
+        <a class="green-btn" href="#">Contact</a>
+      </nav>
     </header>
 
-    <nav>
-      <p>
-        <a href="./index.html">Home</a> |
-        <a href="./about.html">About MDHL</a> |
-        <a href="#">Contact</a>
-      </p>
-    </nav>
+    <div class="container">
+      <h2>About</h2>
 
-    <main>
-      <section>
+      <div class="logo-container">
+        <img
+          class="logo"
+          src="./assets/images/Logo_Mighty_ducks-01.png"
+          alt="mighty ducks logo"
+        />
+      </div>
+
+      <main>
         <p>
           Please email us at
           <a href="mailto:mdhl@chihockey.org">mdhl@chihockey.org</a>
         </p>
-        <p>We reply to your email as soon as we can.</p>
+        <p class="row-spacing">We reply to your email as soon as we can.</p>
+      </main>
 
-        <figure>
-          <img
-            src="./assets/images/hockey_3.jpg"
-            alt="two hockey players"
-            width="500"
-          />
-        </figure>
-      </section>
-    </main>
+      <figure>
+        <img
+          id="bottom-img"
+          src="./assets/images/hockey_3.jpg"
+          alt="two hockey players"
+          width="500"
+        />
+      </figure>
+    </div>
   </body>
 </html>
