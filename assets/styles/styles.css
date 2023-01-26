@@ -58,7 +58,7 @@ header {
 
 nav {
     display: inline-block;
-    vertical-align: middle;
+    vertical-align: top;
     width: 10%;
     height: 100%;
 }
