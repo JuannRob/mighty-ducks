@@ -10,33 +10,43 @@ header {
     width: 100%;
 }
 
+header>div {
+    background-image: url('../images/design2_image.jpg');
+    height: 500px;
+    background-position-y: 25%;
+}
+
 header>h1 {
     font-size: 90px;
 }
 
 /* MAIN PANEL */
-#main-panel {
+#container {
     position: relative;
 }
 
-#main-panel>h2 {
+#container>h2 {
     text-align: center;
     padding: 10px 0;
     border: 1px solid black;
     font-size: 40px;
+    margin-bottom: 40px;
 }
 
 /* LOGO CONTAINER */
-
 .logo-container {
-    border: 1px solid black;
+    /* border: 1px solid black; */
+    position: relative;
     display: inline-block;
     vertical-align: top;
-    width: 250px;
-    height: 100%;
+    width: 20%;
+    height: 200px;
 }
 
 .logo-container>img {
+    position: absolute;
+    bottom: 60px;
+    left: 100px;
     width: 150px;
 }
 
@@ -44,4 +54,17 @@ header>h1 {
 main {
     display: inline-block;
     width: 50%;
+    /* border: 1px solid black; */
+}
+
+main p {
+    padding-left: 20px;
+}
+
+.row-container {
+    margin: 30px 0;
+}
+
+#bottom-img {
+    display: none;
 }
