@@ -1,0 +1,111 @@
+/* -- DESIGN 1 -- */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Brush Script MT', cursive;
+}
+
+/* HEADER */
+header {
+    position: relative;
+    width: 100%;
+}
+
+header>div {
+    background-image: url('../images/design2_image.jpg');
+    background-position-y: 25%;
+    height: 300px;
+}
+
+h1 {
+    font-size: 60px;
+}
+
+/* NAV */
+nav {
+    position: absolute;
+    right: 35px;
+    top: 75px;
+}
+
+nav>a {
+    background-color: #4472c4;
+    border: 2px solid black;
+    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.47);
+    color: white;
+    font-size: 20px;
+    padding: 5px 20px;
+    text-decoration: none;
+}
+
+nav a:nth-child(2) {
+    margin: 0 10px;
+}
+
+.green-btn {
+    background-color: #70ad47;
+}
+
+/* MAIN CONTAINER */
+.container {
+    position: relative;
+}
+
+.container>h2 {
+    border: 1px solid black;
+    font-size: 40px;
+    margin-bottom: 30px;
+    padding: 10px 0;
+    text-align: center;
+}
+
+/* LOGO */
+.logo-container {
+    display: inline-block;
+    vertical-align: top;
+    width: 20%;
+}
+
+.logo-container>img {
+    display: block;
+    margin: auto;
+    transform: translateY(-15px);
+    width: 150px;
+}
+
+/* MAIN */
+main {
+    display: inline-block;
+    vertical-align: top;
+    width: 50%;
+}
+
+main p {
+    font-size: 25px;
+    text-indent: 25px;
+}
+
+.smaller-font p {
+    font-size: 19px;
+}
+
+.row-spacing {
+    margin: 25px 0;
+}
+
+/* ILLUSTRATION */
+.img-container {
+    display: inline-block;
+    width: 20%;
+}
+
+.img-container img {
+    display: block;
+    margin: auto;
+    width: 450px;
+}
