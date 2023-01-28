@@ -13,20 +13,14 @@ header {
     position: relative;
 }
 
-.banner-container {
+.banner {
+    background-image: url("../assets/images/task2_design1.jpg");
     width: 100%;
-    height: 100%;
-    overflow: hidden;
+    height: 200px;
 }
 
-.banner-container img {
-    top: 50%;
-    transform: translateY(-25%);
-
-}
-
-.main-title {
-    font-size: 110px;
+h1 {
+    font-size: 6rem;
     position: absolute;
     z-index: 1;
 }
