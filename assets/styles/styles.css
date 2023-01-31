@@ -7,19 +7,15 @@
 }
 
 body {
-    font-family: 'Brush Script MT', cursive;
+    font-family: Tahoma, sans-serif;
 }
 
 /* HEADER */
-header {
-    position: relative;
-    width: 100%;
-}
-
-header>div {
+.banner {
     background-image: url('../images/design2_image.jpg');
     background-position-y: 25%;
-    height: 300px;
+    height: 150px;
+    text-align: center;
 }
 
 h1 {
@@ -28,27 +24,31 @@ h1 {
 
 /* NAV */
 nav {
-    position: absolute;
-    right: 35px;
-    top: 75px;
+    overflow: hidden;
+    height: 90px;
+    background-color: #0d0d0d;
+    margin-bottom: 1rem;
 }
 
-nav>a {
-    background-color: #4472c4;
-    border: 2px solid black;
-    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.47);
+.logo {
+    transform: translateY(-2%);
+    width: 90px;
+    margin: 0 1rem;
+}
+
+.links {
+    display: inline-flex;
+    vertical-align: top;
+    width: 35%;
+    height: 100%;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.links>a {
     color: white;
     font-size: 20px;
-    padding: 5px 20px;
     text-decoration: none;
-}
-
-nav a:nth-child(2) {
-    margin: 0 10px;
-}
-
-.green-btn {
-    background-color: #70ad47;
 }
 
 /* MAIN CONTAINER */
@@ -64,19 +64,7 @@ nav a:nth-child(2) {
     text-align: center;
 }
 
-/* LOGO */
-.logo-container {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
-}
 
-.logo-container>img {
-    display: block;
-    margin: auto;
-    transform: translateY(-15px);
-    width: 150px;
-}
 
 /* MAIN */
 main {
