@@ -11,7 +11,7 @@ body {
 }
 
 /* HEADER */
-.banner {
+#banner {
     background-image: url('../images/design2_image.jpg');
     background-position-y: 25%;
     height: 150px;
@@ -30,13 +30,13 @@ nav {
     margin-bottom: 1rem;
 }
 
-.logo {
+#logo {
     transform: translateY(-2%);
     width: 90px;
     margin: 0 1rem;
 }
 
-.links {
+#links {
     display: inline-flex;
     vertical-align: top;
     width: 35%;
@@ -45,7 +45,7 @@ nav {
     justify-content: space-between;
 }
 
-.links>a {
+#links>a {
     color: white;
     font-size: 20px;
     text-decoration: none;
@@ -78,14 +78,6 @@ main p {
     text-indent: 25px;
 }
 
-.smaller-font p {
-    font-size: 19px;
-}
-
-.row-spacing {
-    margin: 25px 0;
-}
-
 /* ILLUSTRATION */
 .img-container {
     display: inline-block;
@@ -96,4 +88,18 @@ main p {
     display: block;
     margin: auto;
     width: 450px;
+}
+
+/* TABLE */
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+td:nth-child(-n+2) {
+    background-color: beige;
+    width: 100px;
+    text-align: center;
 }
