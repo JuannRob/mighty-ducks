@@ -97,9 +97,3 @@ td {
     border: 1px solid black;
     border-collapse: collapse;
 }
-
-td:nth-child(-n+2) {
-    background-color: beige;
-    width: 100px;
-    text-align: center;
-}
