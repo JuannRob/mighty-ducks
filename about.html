@@ -1,41 +1,36 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assets/styles/styles.css">
-    <link
-      rel="shortcut icon"
-      href="./assets/images/Logo_Mighty_ducks-01.png"
-      type="image/x-icon"
-    >
-    <title>Mighty Ducks Hockey League</title>
-  </head>
-  <body>
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./assets/styles/styles.css">
+  <link rel="shortcut icon" href="./assets/images/Logo_Mighty_ducks-01.png" type="image/x-icon">
+  <title>Mighty Ducks Hockey League</title>
+</head>
+
+<body>
+  <div id="main-container">
     <header>
-      <h1>Mighty Ducks Hockey League</h1>
-      <div id="banner-container"></div>
-      <nav>
-        <a href="./index.html">Home</a>
-        <a class="green-btn" href="#">About MDHL</a>
-        <a href="./contact.html">Contact</a>
-      </nav>
+      <div id="banner">
+        <img id="logo" src="./assets/images/Logo_Mighty_ducks-01.png" alt="mighty ducks logo">
+        <h1>MIGHTY DUCKS HOCKEY LEAGUE</h1>
+      </div>
     </header>
 
-    <div class="container">
-      <h2>About</h2>
+    <nav>
+      <a href="./index.html">HOME</a>
+      <a href="#">ABOUT</a>
+      <a href="./contact.html">CONTACT</a>
+      <a href="./game_info.html">GAME SCHEDULE</a>
+      <a href="./rules.html">RULES & POLICIES</a>
+    </nav>
 
-      <div class="logo-container">
-        <img
-          class="logo"
-          src="./assets/images/Logo_Mighty_ducks-01.png"
-          alt="mighty ducks logo"
-        >
-      </div>
-
-      <main class="smaller-font">
-        <h2>Mision</h2>
+    <div id="content-body">
+      <main id="about" class="indent">
+        <h2>About</h2>
+        <h3>Mision</h3>
         <p>
           To support young athletes living Chicago's northside neighborhood, who
           have an interest in <br>
@@ -44,15 +39,13 @@
           hockey, specifically those skills around team cooperation and good
           sportsmanship
         </p>
-        <div class="row-spacing">
-          <h2>Vision</h2>
-          <p>
-            The Mighty Ducks Hockey League aspires to develop strong,
-            well-rounded and mindful athletes <br>
-            through the building of character, self-discipline, and leadership.
-          </p>
-        </div>
-        <h2>General Information</h2>
+        <h3>Vision</h3>
+        <p>
+          The Mighty Ducks Hockey League aspires to develop strong,
+          well-rounded and mindful athletes <br>
+          through the building of character, self-discipline, and leadership.
+        </p>
+        <h3>General Information</h3>
         <p>
           The Mighty Ducks Soccer League was established in 1996 to provide
           athletes residing <br>
@@ -66,9 +59,11 @@
         </p>
       </main>
 
-      <div class="img-container">
+      <aside>
         <img src="./assets/images/hockey_2.jpg" alt="hockey player">
-      </div>
+      </aside>
     </div>
-  </body>
+  </div>
+</body>
+
 </html>
