@@ -1,111 +1,179 @@
 /* -- DESIGN 1 -- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
-* {
+body {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     box-sizing: border-box;
+    background-color: #5fa19969;
     margin: 0;
     padding: 0;
 }
 
-body {
-    font-family: 'Brush Script MT', cursive;
+#main-container {
+    background-color: #fffde9;
+    margin: 0 7rem;
+    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.282);
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 25px;
+    margin: 0 0 2rem 0;
 }
 
 /* HEADER */
 header {
-    position: relative;
-    width: 100%;
+    height: 20%;
 }
 
-header>div {
+#banner {
     background-image: url('../images/design2_image.jpg');
     background-position-y: 25%;
-    height: 300px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+#logo {
+    width: 200px
 }
 
 h1 {
-    font-size: 60px;
+    font-weight: 700;
+    align-self: center;
+    font-size: 55pt;
+    color: #f8ea2d;
+    -webkit-text-stroke: 2px #ba4c2e;
+    text-shadow: -4px 0px 0px rgba(95, 161, 153, 1);
 }
 
 /* NAV */
 nav {
-    position: absolute;
-    right: 35px;
-    top: 75px;
+    background-color: #5fa199;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 nav>a {
-    background-color: #4472c4;
-    border: 2px solid black;
-    box-shadow: 4px 4px 0 0 rgba(0, 0, 0, 0.47);
     color: white;
-    font-size: 20px;
-    padding: 5px 20px;
+    font-size: 20pt;
     text-decoration: none;
+    margin: 0 1rem;
 }
 
-nav a:nth-child(2) {
-    margin: 0 10px;
+/* CONTENT BODY */
+#content-body {
+    align-items: center;
+    display: flex;
+    border: 2px solid #ba4c2e;
+    justify-content: center;
+    min-height: 73vh;
 }
 
-.green-btn {
-    background-color: #70ad47;
-}
-
-/* MAIN CONTAINER */
-.container {
-    position: relative;
-}
-
-.container>h2 {
-    border: 1px solid black;
-    font-size: 40px;
-    margin-bottom: 30px;
-    padding: 10px 0;
+h2 {
+    font-size: 30pt;
     text-align: center;
 }
 
-/* LOGO */
-.logo-container {
-    display: inline-block;
-    vertical-align: top;
-    width: 20%;
+h3 {
+    font-size: 20pt;
+    margin: 0;
 }
 
-.logo-container>img {
-    display: block;
-    margin: auto;
-    transform: translateY(-15px);
-    width: 150px;
-}
-
-/* MAIN */
 main {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
+    min-height: 25vh;
+    width: 60%;
+    max-height: 100%;
 }
 
-main p {
-    font-size: 25px;
+#contact p {
+    text-align: center;
+}
+
+#rules,
+#game-info {
+    margin-top: 2rem;
+}
+
+#rules p {
+    font-size: 16pt;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.indent>p {
     text-indent: 25px;
 }
 
-.smaller-font p {
-    font-size: 19px;
+.clean-text>p {
+    margin: 0;
 }
 
-.row-spacing {
-    margin: 25px 0;
+.reduce-line-height {
+    line-height: 0;
 }
 
-/* ILLUSTRATION */
-.img-container {
-    display: inline-block;
-    width: 20%;
-}
-
-.img-container img {
-    display: block;
-    margin: auto;
+/* ASIDE */
+aside img {
     width: 450px;
+}
+
+/* LIST */
+ol {
+    padding: 0;
+}
+
+li {
+    list-style-position: inside;
+    font-size: 16pt;
+}
+
+#field-regulations>li {
+    margin-bottom: 0.5rem;
+}
+
+.alpha {
+    list-style: lower-alpha;
+}
+
+ul>li {
+    list-style: circle;
+}
+
+/* TABLE */
+table,
+th,
+td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
+
+th {
+    padding: 2rem;
+}
+
+td {
+    padding: 1rem 5rem;
+}
+
+/* GAME SCHEDULE */
+#schedule-info {
+    margin: 2rem;
+}
+
+#schedule-info>div {
+    display: flex;
+    justify-content: space-between;
 }
