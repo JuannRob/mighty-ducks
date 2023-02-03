@@ -177,3 +177,18 @@ td {
     display: flex;
     justify-content: space-between;
 }
+
+
+/* FORM */
+form {
+    margin: 2rem;
+    border: 1px solid black;
+}
+
+fieldset {
+    display: flex;
+}
+
+input {
+    margin: 0 1rem 1rem 0;
+}
