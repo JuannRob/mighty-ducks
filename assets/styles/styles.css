@@ -1,4 +1,3 @@
-/* -- DESIGN 1 -- */
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
 
 body {
@@ -19,7 +18,8 @@ body {
 
 h1,
 h2,
-h3 {
+h3,
+ol {
     margin: 0;
     padding: 0;
 }
@@ -27,6 +27,10 @@ h3 {
 p {
     font-size: 25px;
     margin: 0 0 2rem 0;
+}
+
+.clear-margin {
+    margin: 0;
 }
 
 /* HEADER */
@@ -81,7 +85,7 @@ nav>a {
 }
 
 main {
-    display: inline-flex;
+    display: flex;
     flex-direction: column;
     min-height: 70vh;
     width: 60%;
@@ -91,8 +95,7 @@ main {
 h2 {
     font-size: 30pt;
     text-align: center;
-    justify-self: flex-start;
-
+    flex: 1;
 }
 
 h3 {
@@ -100,47 +103,40 @@ h3 {
     margin: 0;
 }
 
-.small-content {
-    justify-self: baseline;
-}
-
-#contact p {
-    text-align: center;
-}
-
-#rules,
-#game-info {
-    margin-top: 2rem;
-}
-
-#rules p {
-    font-size: 16pt;
-}
-
+/* FORMATTING CLASSES */
 .subtitle {
     text-align: center;
 }
 
-.indent>p {
+.indent {
     text-indent: 25px;
-}
-
-.clean-text>p {
-    margin: 0;
 }
 
 .reduce-line-height {
     line-height: 0;
 }
 
-/* ASIDE */
-aside img {
-    width: 450px;
+.small-content {
+    flex: 1;
 }
 
-/* LIST */
-ol {
-    padding: 0;
+/* CONTACT */
+#contact p {
+    text-align: center;
+}
+
+/* RULES */
+#rules p {
+    font-size: 16pt;
+}
+
+/* RULES */
+ul {
+    margin-top: 0;
+}
+
+ul>li {
+    list-style: circle;
 }
 
 li {
@@ -148,23 +144,23 @@ li {
     font-size: 16pt;
 }
 
+#field-regulations {
+    margin-bottom: 1rem;
+}
+
 #field-regulations>li {
-    margin-bottom: 0.5rem;
+    margin-bottom: 1rem;
 }
 
 .alpha {
     list-style: lower-alpha;
 }
 
-ul>li {
-    list-style: circle;
-}
-
-/* TABLE */
+/* GAME SCHEDULE */
 table,
 th,
 td {
-    border: 1px solid black;
+    border: 2px solid #ba4c2e;
     border-collapse: collapse;
 }
 
@@ -176,7 +172,6 @@ td {
     padding: 1rem 5rem;
 }
 
-/* GAME SCHEDULE */
 #schedule-info {
     margin: 2rem;
 }
@@ -186,13 +181,13 @@ td {
     justify-content: space-between;
 }
 
+/* RULES & GAME INFO MARGIN TOP */
+#rules,
+#game-info {
+    margin-top: 1rem;
+}
 
-/* FORM */
-
-/* #registration {
-    
-} */
-
+/* REGISTRATION */
 form {
     display: inline-flex;
     flex-direction: column;
@@ -202,4 +197,10 @@ form {
 
 input {
     margin: 0 1rem 1rem 0;
+}
+
+/* ASIDE */
+aside img {
+    border: 2px solid #ba4c2e;
+    width: 450px;
 }
