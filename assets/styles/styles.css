@@ -1,8 +1,11 @@
 /* -- DESIGN 1 -- */
+@import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;700&display=swap');
+
 body {
-    font-family: Tahoma, sans-serif;
+    font-family: 'Oswald', sans-serif;
+    font-weight: 400;
     box-sizing: border-box;
-    background: #fff79d;
+    background-color: #5fa19969;
     margin: 0;
     padding: 0;
 }
@@ -10,83 +13,144 @@ body {
 #main-container {
     background-color: #fffde9;
     margin: 0 7rem;
-    height: 100vh;
     box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.282);
+    min-height: 100vh;
+}
+
+h1,
+h2,
+h3 {
+    margin: 0;
+    padding: 0;
+}
+
+p {
+    font-size: 25px;
+    margin: 0 0 2rem 0;
 }
 
 /* HEADER */
+header {
+    height: 20%;
+}
+
 #banner {
     background-image: url('../images/design2_image.jpg');
     background-position-y: 25%;
-    height: 10rem;
+    height: 100%;
     display: flex;
     justify-content: center;
 }
 
-h1 {
-    margin: 0;
-    padding: 0;
-    font-size: 4rem;
-    color: #f8ea2d;
-    -webkit-text-stroke: 2px #ba4c2e;
+#logo {
+    width: 200px
 }
 
-#logo {
-    transform: translateY(-2%);
+h1 {
+    font-weight: 700;
+    align-self: center;
+    font-size: 55pt;
+    color: #f8ea2d;
+    -webkit-text-stroke: 2px #ba4c2e;
+    text-shadow: -4px 0px 0px rgba(95, 161, 153, 1);
 }
 
 /* NAV */
 nav {
+    background-color: #5fa199;
     height: 4rem;
-    background-color: #1c5d49;
-}
-
-#links {
-    display: inline-flex;
-    vertical-align: top;
-    width: 100%;
-    height: 100%;
-    align-items: center;
+    display: flex;
     justify-content: center;
+    align-items: center;
 }
 
-#links>a {
+nav>a {
     color: white;
-    font-size: 1.5rem;
+    font-size: 20pt;
     text-decoration: none;
-    margin: 1rem;
+    margin: 0 1rem;
 }
 
 /* CONTENT BODY */
 #content-body {
-    margin: 1rem;
+    align-items: center;
+    display: flex;
     border: 2px solid #ba4c2e;
-    height: 100%;
+    justify-content: center;
+    min-height: 73vh;
 }
 
-/* main {
-    position: relative;
-} */
-
-/* main>h2 {
-    border: 1px solid black;
-    font-size: 40px;
-    margin-bottom: 30px;
-    padding: 10px 0;
+h2 {
+    font-size: 30pt;
     text-align: center;
-} */
-
-/* MAIN
-main {
-    display: inline-block;
-    vertical-align: top;
-    width: 50%;
 }
 
-main p {
-    font-size: 25px;
+h3 {
+    font-size: 20pt;
+    margin: 0;
+}
+
+main {
+    min-height: 25vh;
+    width: 60%;
+    max-height: 100%;
+}
+
+#contact p {
+    text-align: center;
+}
+
+#rules,
+#game-info {
+    margin-top: 2rem;
+}
+
+#rules p {
+    font-size: 16pt;
+}
+
+.subtitle {
+    text-align: center;
+}
+
+.indent>p {
     text-indent: 25px;
-} */
+}
+
+.clean-text>p {
+    margin: 0;
+}
+
+.reduce-line-height {
+    line-height: 0;
+}
+
+/* ASIDE */
+aside img {
+    width: 450px;
+}
+
+/* LIST */
+ol {
+    padding: 0;
+}
+
+li {
+    list-style-position: inside;
+    font-size: 16pt;
+}
+
+#field-regulations>li {
+    margin-bottom: 0.5rem;
+}
+
+.alpha {
+    list-style: lower-alpha;
+}
+
+ul>li {
+    list-style: circle;
+}
 
 /* TABLE */
 table,
@@ -96,48 +160,20 @@ td {
     border-collapse: collapse;
 }
 
-
-li {
-    list-style-position: inside;
+th {
+    padding: 2rem;
 }
 
-.alpha {
-    list-style: lower-alpha;
+td {
+    padding: 1rem 5rem;
 }
 
-article>li {
-    list-style: circle;
-    list-style-position: inside;
+/* GAME SCHEDULE */
+#schedule-info {
+    margin: 2rem;
 }
 
-/* ASIDE */
-
-/*
-a .img-container {
-    display: inline-block;
-    width: 20%;
-}
-*/
-.img-container img {
-    /* display: block;
-    margin: auto; */
-    width: 450px;
-}
-
-
-/* PRUEBAAA */
-main,
-aside,
-footer {
-    margin: 0 1.5% 24px 1.5%;
-}
-
-main {
-    float: left;
-    width: 63%;
-}
-
-aside {
-    float: right;
-    width: 30%;
+#schedule-info>div {
+    display: flex;
+    justify-content: space-between;
 }
