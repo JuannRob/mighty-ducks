@@ -80,9 +80,19 @@ nav>a {
     min-height: 73vh;
 }
 
+main {
+    display: inline-flex;
+    flex-direction: column;
+    min-height: 70vh;
+    width: 60%;
+    max-height: 100%;
+}
+
 h2 {
     font-size: 30pt;
     text-align: center;
+    justify-self: flex-start;
+
 }
 
 h3 {
@@ -90,10 +100,8 @@ h3 {
     margin: 0;
 }
 
-main {
-    min-height: 25vh;
-    width: 60%;
-    max-height: 100%;
+.small-content {
+    justify-self: baseline;
 }
 
 #contact p {
@@ -180,13 +188,16 @@ td {
 
 
 /* FORM */
-form {
-    margin: 2rem;
-    border: 1px solid black;
-}
 
-fieldset {
-    display: flex;
+/* #registration {
+    
+} */
+
+form {
+    display: inline-flex;
+    flex-direction: column;
+    margin: auto;
+    border: 1px solid black;
 }
 
 input {
