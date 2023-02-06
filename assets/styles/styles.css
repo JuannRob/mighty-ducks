@@ -25,7 +25,7 @@ ol {
 }
 
 p {
-    font-size: 25px;
+    font-size: 20pt;
     margin: 0 0 2rem 0;
 }
 
@@ -120,6 +120,11 @@ h3 {
     flex: 1;
 }
 
+/* ABOUT */
+#about>h2 {
+    margin-top: 1rem;
+}
+
 /* CONTACT */
 #contact p {
     text-align: center;
@@ -130,7 +135,6 @@ h3 {
     font-size: 16pt;
 }
 
-/* RULES */
 ul {
     margin-top: 0;
 }
@@ -156,27 +160,116 @@ li {
     list-style: lower-alpha;
 }
 
-/* GAME SCHEDULE */
+/* GAME INFO */
+#game-info {
+    width: 100%;
+}
+
+#game-info>p {
+    width: 41vw;
+    position: relative;
+    left: 23vw;
+    margin: 2rem 0 0.5rem 0;
+    font-size: 17pt;
+}
+
 table,
 th,
 td {
     border: 2px solid #ba4c2e;
     border-collapse: collapse;
+    text-align: center;
 }
 
 th {
-    padding: 2rem;
+    font-size: 20pt;
 }
 
-td {
-    padding: 1rem 5rem;
+tr {
+    font-size: 15pt;
 }
 
-#schedule-info {
-    margin: 2rem;
+tr:nth-child(odd) td:first-child {
+    font-size: 18pt;
 }
 
-#schedule-info>div {
+table {
+    width: 50%;
+}
+
+.violet-text {
+    color: #845EC2;
+}
+
+.emerald-text {
+    color: #008F7A;
+}
+
+.cyan-text {
+    color: #2cb3e8;
+}
+
+.brown-text {
+    color: #B37551;
+}
+
+.red-text {
+    color: #FF6F91;
+}
+
+.dark-text {
+    color: #4B4453;
+}
+
+.violet-border {
+    border: 3px solid #845EC2;
+}
+
+.emerald-border {
+    border: 3px solid #008F7A;
+}
+
+.cyan-border {
+    border: 3px solid #2cb3e8;
+}
+
+.brown-border {
+    border: 3px solid #B37551;
+}
+
+.red-border {
+    border: 3px solid #FF6F91;
+}
+
+.dark-border {
+    border: 3px solid #4B4453;
+}
+
+iframe {
+    border: 3px solid #ba4c2e;
+}
+
+.gamesInfo-container {
+    max-width: 100%;
+    height: 80vh;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.right-maps,
+.left-maps {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+#extra-info {
+    width: 50%;
+    margin-top: 2rem;
+    align-self: center;
+}
+
+#extra-info>div {
     display: flex;
     justify-content: space-between;
 }
@@ -189,10 +282,11 @@ td {
 
 /* REGISTRATION */
 form {
+    border: 1px solid black;
     display: inline-flex;
     flex-direction: column;
-    margin: auto;
-    border: 1px solid black;
+    align-self: center;
+
 }
 
 input {
