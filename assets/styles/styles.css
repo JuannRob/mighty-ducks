@@ -4,16 +4,9 @@ body {
     font-family: 'Oswald', sans-serif;
     font-weight: 400;
     box-sizing: border-box;
-    background-color: #5fa19969;
+    background-color: #fffde9;
     margin: 0;
     padding: 0;
-}
-
-#main-container {
-    background-color: #fffde9;
-    margin: 0 7rem;
-    box-shadow: 0 1rem 3rem rgba(0, 0, 0, 0.282);
-    min-height: 100vh;
 }
 
 h1,
@@ -80,7 +73,7 @@ nav>a {
     align-items: center;
     display: flex;
     border: 2px solid #ba4c2e;
-    justify-content: center;
+    justify-content: space-around;
     min-height: 73vh;
 }
 
@@ -109,7 +102,7 @@ h3 {
 }
 
 .indent {
-    text-indent: 25px;
+    text-indent: 17px;
 }
 
 .reduce-line-height {
@@ -121,8 +114,16 @@ h3 {
 }
 
 /* ABOUT */
+#about {
+    width: 50vw;
+}
+
 #about>h2 {
     margin-top: 1rem;
+}
+
+#about>p {
+    font-size: 19pt;
 }
 
 /* CONTACT */
@@ -168,7 +169,7 @@ li {
 #game-info>p {
     width: 41vw;
     position: relative;
-    left: 23vw;
+    left: 26vw;
     margin: 2rem 0 0.5rem 0;
     font-size: 17pt;
 }
@@ -194,7 +195,8 @@ tr:nth-child(odd) td:first-child {
 }
 
 table {
-    width: 50%;
+    table-layout: fixed;
+    width: 50vw;
 }
 
 .violet-text {
@@ -246,6 +248,8 @@ table {
 }
 
 iframe {
+    width: 300px;
+    height: 200px;
     border: 3px solid #ba4c2e;
 }
 
@@ -281,20 +285,620 @@ iframe {
 }
 
 /* REGISTRATION */
-form {
-    border: 1px solid black;
-    display: inline-flex;
-    flex-direction: column;
-    align-self: center;
-
+#registration {
+    width: 50%;
 }
 
+form {
+    border: 2px dashed #ba4c2e;
+    margin: 1rem;
+    padding: 2rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+form>div {
+    margin-bottom: 2rem;
+}
+
+form p {
+    font-size: 16pt;
+    margin: 0;
+}
+
+form b {
+    font-size: 18pt;
+    margin: 0;
+}
+
+label {
+    font-size: 16pt;
+}
+
+input[type=text],
+input[type=date] {
+    display: inline;
+    border: 0;
+    border-bottom: 2px solid black;
+    background-color: #fffde9;
+}
+
+input[type=text]:focus {
+    outline: none;
+}
+
+.personal-info {
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+}
+
+.inputs-container>div {
+    margin: 1rem 0;
+}
+
+.double-input {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.double-input>div {
+    width: 50%;
+}
+
+.double-input input[type=text] {
+    width: 60%;
+}
+
+.gender {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.gender>div {
+    margin: 0 1rem;
+}
+
+.grade {
+    display: inline-flex;
+    flex-direction: row;
+}
+
+.grade>div {
+    margin: 0 0.5rem;
+}
+
+#name {
+    width: 55%;
+}
+
+#last-name {
+    width: 70%;
+}
+
+#address {
+    width: 82%;
+}
+
+#city {
+    width: 83%;
+}
+
+#zip {
+    width: 74%;
+}
+
+#birthdate {
+    width: 46%;
+}
+
+.school-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.inputs-group-container {
+    display: flex;
+}
+
+.inputs-group-container div {
+    margin-right: 1rem;
+}
+
+.permission {
+    width: 100%;
+}
+
+.permission>div {
+    margin: 1rem 0;
+}
+
+button {
+    display: block;
+    width: 20%;
+    margin: auto;
+}
+
+button,
 input {
-    margin: 0 1rem 1rem 0;
+    font-family: inherit;
+    font-size: 15pt;
 }
 
 /* ASIDE */
 aside img {
     border: 2px solid #ba4c2e;
     width: 450px;
+}
+
+/*---------------------------MEDIA QUERIES*---------------------------/
+
+/* |||||||||||||||||||||| PHONE ||||||||||||||||||||||||||||| */
+@media only screen and (min-width: 320px) and (max-width: 1439px) {
+
+    p {
+        font-size: 12pt;
+        margin: 0 0 0.5rem 0;
+    }
+
+    /* HEADER */
+    header {
+        height: 40vw;
+    }
+
+    #banner {
+        background-size: cover;
+        flex-direction: column;
+    }
+
+    #logo {
+        width: 100px;
+        margin: 0;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 150%;
+        -webkit-text-stroke: 1px #ba4c2e;
+        text-shadow: -2px 0px 0px rgba(95, 161, 153, 1);
+    }
+
+    /* NAV */
+    nav {
+        background-color: #5fa199;
+        width: 100vw;
+        height: 7vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav>a {
+        font-size: 8pt;
+        margin: 0;
+    }
+
+    /* CONTENT BODY */
+    #content-body {
+        align-items: center;
+        flex-direction: column;
+        border: 1px solid #ba4c2e;
+        justify-content: center;
+        min-height: 70vh;
+        padding-bottom: 1rem;
+    }
+
+    main {
+        flex-direction: column;
+        min-height: 0;
+        width: 100vw;
+        max-height: 100%;
+    }
+
+    h2 {
+        font-size: 20pt;
+        text-align: center;
+        flex: 0;
+    }
+
+    h3 {
+        font-size: 15pt;
+        margin: 0;
+    }
+
+    /* FORMATTING CLASSES */
+    .subtitle {
+        text-align: center;
+    }
+
+    .indent {
+        text-indent: 15px;
+    }
+
+    .reduce-line-height {
+        line-height: 0;
+    }
+
+    .small-content {
+        flex: none;
+        margin-top: 1rem;
+    }
+
+    .small-content>p,
+    .small-content>h3 {
+        text-align: center;
+    }
+
+    /* HOME */
+    #home {
+        width: 90vw;
+    }
+
+    #home p {
+        text-indent: 0;
+    }
+
+    /* ABOUT */
+    #about {
+        width: 95vw;
+    }
+
+    #about>p {
+        font-size: 12pt;
+    }
+
+    /* RULES */
+    #rules {
+        width: 90vw;
+    }
+
+    #rules>h2 {
+        font-size: 15pt;
+    }
+
+    #rules p {
+        font-size: 13pt;
+    }
+
+    #rules b {
+        font-size: 13pt;
+    }
+
+    li {
+        list-style-position: inside;
+        font-size: 13pt;
+    }
+
+    /* GAME INFO */
+    #game-info>p {
+        position: static;
+        display: inline;
+        margin-left: 2rem;
+        width: 70vw;
+        font-size: 12pt;
+    }
+
+    .gamesInfo-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    th {
+        font-size: 12pt;
+    }
+
+    td {
+        font-size: 12pt;
+        padding: 5px 0;
+    }
+
+    tr:nth-child(odd) td:first-child {
+        font-size: 15pt;
+    }
+
+
+    table {
+        table-layout: auto;
+        width: 90vw;
+    }
+
+    iframe {
+        width: 90vw;
+        height: 20vh;
+        border: 3px solid #ba4c2e;
+    }
+
+    .left-maps {
+        gap: 10px 0;
+        order: 1;
+        margin: 5px 0 20px 0
+    }
+
+    .right-maps {
+        gap: 10px 0;
+        margin: 20px 0 5px 0
+    }
+
+    #extra-info {
+        width: 90vw;
+        margin: 0;
+    }
+
+    #extra-info>div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    /* RULES & GAME INFO MARGIN TOP */
+    #rules,
+    #game-info {
+        margin-top: 0;
+    }
+
+    /* REGISTRATION */
+    #registration {
+        width: 100vw;
+    }
+
+    form {
+        margin: 0.5rem;
+        padding: 0.5rem;
+    }
+
+    form>div {
+        margin-bottom: 1rem;
+    }
+
+    form p {
+        font-size: 10pt;
+        margin: 0;
+    }
+
+    form b {
+        font-size: 12pt;
+        margin: 0;
+    }
+
+
+    label {
+        font-size: 10pt;
+    }
+
+    .gender>div {
+        width: 90%;
+        margin: 0;
+    }
+
+    .grade {
+        display: inline-flex;
+        flex-direction: row;
+    }
+
+    .grade>div {
+        width: 90%;
+        margin: 0;
+    }
+
+    #name {
+        width: 90%;
+    }
+
+    #last-name {
+        width: 90%;
+    }
+
+    #address {
+        width: 90%;
+    }
+
+    #city {
+        width: 90%;
+    }
+
+    #zip {
+        width: 90%;
+    }
+
+    #birthdate {
+        width: 90%;
+    }
+
+    .permission {
+        width: 100%;
+    }
+
+    .permission>div {
+        margin: 1rem 0;
+        width: 30%;
+    }
+
+    button,
+    input {
+        font-family: inherit;
+        font-size: 10pt;
+    }
+
+    #game-info>h2,
+    #rules>h2,
+    #registration>h2 {
+        margin-top: 1rem;
+    }
+
+    /* ASIDE */
+    aside img {
+        border: 1px solid #ba4c2e;
+        width: 75vw;
+    }
+}
+
+
+/* |||||||||||||||||||||| TABLET/SMALL SCREEN ||||||||||||||||||||||||||||| */
+@media only screen and (min-width: 768px) and (max-width: 1439px) {
+
+    p {
+        font-size: 15pt;
+        margin: 0 0 0.5rem 0;
+    }
+
+    /* HEADER */
+    header {
+        height: 20vw;
+    }
+
+    #logo {
+        width: 150px;
+        margin: 0;
+        align-self: center;
+    }
+
+    h1 {
+        font-size: 300%;
+        -webkit-text-stroke: 1px #ba4c2e;
+        text-shadow: -2px 0px 0px rgba(95, 161, 153, 1);
+    }
+
+    /* NAV */
+    nav {
+        background-color: #5fa199;
+        width: 100vw;
+        height: 5vh;
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    nav>a {
+        font-size: 15pt;
+        margin: 0;
+    }
+
+    #content-body {
+        align-items: center;
+        border: 1px solid #ba4c2e;
+        justify-content: center;
+        min-height: 70vh;
+        padding-bottom: 1rem;
+        height: none;
+    }
+
+    main {
+        flex-direction: column;
+        min-height: 0;
+        width: 100vw;
+        max-height: none;
+    }
+
+    h2 {
+        font-size: 27pt;
+        text-align: center;
+        flex: 0;
+    }
+
+    h3 {
+        font-size: 17pt;
+        margin: 0;
+    }
+
+    /* ABOUT */
+    #about>p {
+        font-size: 15pt;
+    }
+
+    /* RULES */
+    #rules p {
+        font-size: 15pt;
+    }
+
+    #rules b {
+        font-size: 15pt;
+    }
+
+    #rules>h2 {
+        font-size: 27pt;
+    }
+
+    li {
+        list-style-position: inside;
+        font-size: 15pt;
+    }
+
+    /* GAME INFO */
+    #game-info>p {
+        position: relative;
+        display: inline;
+        left: 60px;
+        margin-left: 2rem;
+        width: 70vw;
+        font-size: 12pt;
+    }
+
+    .gamesInfo-container {
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: auto;
+        align-items: center;
+    }
+
+    th {
+        font-size: 15pt;
+    }
+
+    td {
+        font-size: 13pt;
+        padding: 5px 0;
+    }
+
+    tr:nth-child(odd) td:first-child {
+        font-size: 15pt;
+    }
+
+    #extra-info>div {
+        display: flex;
+        flex-direction: row;
+    }
+
+    /* REGISTRATION */
+    form p {
+        font-size: 13pt;
+        margin: 0;
+    }
+
+    form b {
+        font-size: 15pt;
+        margin: 0;
+    }
+
+    label {
+        font-size: 13pt;
+    }
+
+    #address {
+        width: 95%;
+    }
+
+    #city {
+        width: 95%;
+    }
+
+    .permission input {
+        width: 100%;
+    }
+
+    button,
+    input {
+        font-family: inherit;
+        font-size: 13pt;
+    }
+
+    /* ASIDE */
+    aside img {
+        border: 2px solid #ba4c2e;
+        width: 300px;
+    }
 }

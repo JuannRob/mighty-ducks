@@ -26,61 +26,210 @@
             <a href="./game_info.html">GAME SCHEDULE</a>
             <a href="./rules.html">RULES & POLICIES</a>
             <a href="#">REGISTRATION</a>
-            <a href="./show_data.html">DATA</a>
         </nav>
 
         <div id="content-body">
             <main id="registration">
                 <h2>Registration Form</h2>
-
-                <form action="">
-                    <div>
-                        <label for="name">Player's First Name:</label>
-                        <input type="text" name="name" id="name">
-                        <label for="last-name">Last Name:</label>
-                        <input type="text" name="last-name" id="last-name">
+                <form action="./show_data.html">
+                    <div class="personal-info">
+                        <div class="inputs-container double-input">
+                            <div>
+                                <label for="name">Player's First Name:</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div>
+                                <label for="last-name">Last Name:</label>
+                                <input type="text" name="last-name" id="last-name">
+                            </div>
+                        </div>
+                        <div class="inputs-container">
+                            <label for="address">Street Address:</label>
+                            <input type="text" name="address" id="address">
+                        </div>
+                        <div class="inputs-container double-input">
+                            <div>
+                                <label for="city">City:</label>
+                                <input type="text" name="city" id="city">
+                            </div>
+                            <div>
+                                <label for="zip">Zip Code:</label>
+                                <input type="text" name="zip" id="zip">
+                            </div>
+                        </div>
+                        <div class="inputs-container double-input">
+                            <div>
+                                <label for="birthdate">Birth Date(mm/dd/yyyy):</label>
+                                <input type="text" name="birthdate" id="birthdate">
+                            </div>
+                            <div class="gender">
+                                <p>Gender:</p>
+                                <div>
+                                    <label for="female">Female</label>
+                                    <input type="radio" name="gender" id="female" value="Female" checked>
+                                </div>
+                                <div>
+                                    <label for="male">Male</label>
+                                    <input type="radio" name="gender" id="male" value="Male">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grade">
+                            <p>Grade:</p>
+                            <div>
+                                <input type="radio" name="grade" id="pre-school" value="pre-school" checked>
+                                <label for="pre-school">Pre-School</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="1st" value="1st">
+                                <label for="1st">1st</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="2nd" value="2nd">
+                                <label for="2nd">2nd</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="3rd" value="3rd">
+                                <label for="3rd">3rd</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="4th" value="4th">
+                                <label for="4th">4th</label>
+                            </div>
+                            <div>
+                                <input type="radio" name="grade" id="5th" value="5th">
+                                <label for="5th">5th</label>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="adress">Street Adress:</label>
-                        <input type="text" name="adress" id="adress">
+                    <div class="school-info">
+                        <p><b>Which elementary school do you live near?</b></p>
+                        <p><b>Closest school:</b></p>
+                        <div class="inputs-group-container">
+                            <div>
+                                <div>
+                                    <input type="radio" name="school" id="karzenmaier" value="AJ Karzenmaier">
+                                    <label for="karzenmaier">AJ Karzenmaier</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="school" id="greenbay" value="Greenbay">
+                                    <label for="greenbay">Greenbay</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="school" id="yeager" value="Howard A Yeager">
+                                    <label for="yeager">Howard A Yeager</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" name="school" id="hart" value="Marjorie P Hart">
+                                    <label for="hart">Marjorie P Hart</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="school" id="north" value="North Elementary">
+                                    <label for="north">North Elementary</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="school" id="south" value="South Elementary">
+                                    <label for="south">South Elementary</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="city">City:</label>
-                        <input type="text" name="city" id="city">
-                        <label for="zip">Zip Code:</label>
-                        <input type="text" name="zip" id="zip">
+                    <div class="position-info">
+                        <p><b>What position(s) do you normally play?(check all that apply)</b></p>
+                        <div class="inputs-group-container">
+                            <div>
+                                <div>
+                                    <input type="checkbox" name="position" id="forward" value="Forward">
+                                    <label for="forward">Forward</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="position" id="midfield" value="Midfield">
+                                    <label for="midfield">Midfield</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="checkbox" name="position" id="defense" value="Defense">
+                                    <label for="defense">Defense</label>
+                                </div>
+                                <div>
+                                    <input type="checkbox" name="position" id="goalkeeper" value="Goalkeeper">
+                                    <label for="goalkeeper">Goalkeeper</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="birthdate">Birth Date(mm/dd/yyyy):</label>
-                        <input type="text" name="birthdate" id="birthdate">
-                        <label for="male">Gender:</label>
-                        <label for="male">Male</label>
-                        <input type="radio" name="gender" id="male" value="male" checked>
-                        <label for="female">Female</label>
-                        <input type="radio" name="gender" id="female" value="female">
+                    <div class="uniform-info">
+                        <p><b>Uniform Size:</b></p>
+                        <div class="inputs-group-container">
+                            <div>
+                                <div>
+                                    <input type="radio" name="size" id="youth-small" value="Youth Small">
+                                    <label for="youth-small">Youth Small</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="size" id="youth-medium" value="Youth Medium">
+                                    <label for="youth-medium">Youth Medium</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="size" id="youth-large" value="Youth Large">
+                                    <label for="youth-large">Youth Large</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="size" id="small" value="Small">
+                                    <label for="small">Small</label>
+                                </div>
+                            </div>
+                            <div>
+                                <div>
+                                    <input type="radio" name="size" id="medium" value="Medium">
+                                    <label for="medium">Medium</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="size" id="large" value="Large">
+                                    <label for="large">Large</label>
+                                </div>
+                                <div>
+                                    <input type="radio" name="size" id="extra-large" value="Extra Large">
+                                    <label for="extra-large">Extra Large</label>
+                                </div>
+                            </div>
+                        </div>
                     </div>
 
-                    <div>
-                        <label for="pre-school">Grade:</label>
-                        <label for="pre-school">Pre-School</label>
-                        <input type="radio" name="grade" id="pre-school" value="pre-school" checked>
-                        <label for="1st">1st</label>
-                        <input type="radio" name="grade" id="1st" value="1st">
-                        <label for="2nd">2nd</label>
-                        <input type="radio" name="grade" id="2nd" value="2nd">
-                        <label for="3rd">3rd</label>
-                        <input type="radio" name="grade" id="3rd" value="3rd">
-                        <label for="4th">4th</label>
-                        <input type="radio" name="grade" id="4th" value="4th">
-                        <label for="5th">5th</label>
-                        <input type="radio" name="grade" id="5th" value="5th">
+                    <div class="permission">
+                        <p><b>Permission to Play</b></p>
+                        <p>I, the parent or guardian of the minor registrant, agree that the registrant and I will abide
+                            by
+                            all
+                            the rules of the Mighty Ducks Hockey League (MDHL).
+                            In recognizing the possibility of physical injury associated with hockey and in
+                            consideration
+                            for
+                            the "League" accepting the registrant for its hockey programs and activities,
+                            I hereby release, discharge, and/or otherwise indemnify MDHL, their employees and associated
+                            personnel and volunteers, including the facilities used for practices and games, against any
+                            claim
+                            by or on behalf of the registrant as a result of the registrant´s participation in the
+                            programand/orbeing trasported to or from MDHL sponsored activities, wich transportation.
+                            By signing below, I herebyagre andauthorizethe above. In addition, by signing below, I also
+                            acknowledge that I have read the cancellation policy and agree to its terms.</p>
+                        <div>
+                            <label for="signature">Parent/GuardianSignature:</label>
+                            <input type="text" name="signature" id="signature" placeholder="John Doe">
+                        </div>
+                        <div>
+                            <label for="date">Date:</label>
+                            <input type="text" name="date" id="date" placeholder="mm/dd/yyyy">
+                        </div>
+                        <button id="submit" type="submit">Submit</button>
                     </div>
                 </form>
-
-
             </main>
         </div>
     </div>
